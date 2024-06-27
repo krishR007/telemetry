@@ -1,0 +1,1 @@
+1. sh ./check_csr.sh api.elvee.app.csr
