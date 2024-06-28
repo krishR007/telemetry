@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: tesla/fleet-telemetry:v0.3.0
+    ports:
+      - 0.0.0.0:443:443
+    volumes:
+      - ./cert:/config
+      - ./config.json:/etc/fleet-telemetry/config.json

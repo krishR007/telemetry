@@ -1,0 +1,29 @@
+{
+  "host": "0.0.0.0",
+  "hostname": "boston.elaunchinfotech.in",
+  "port": 443,
+  "log_level": "debug",
+  "json_log_enable": true,
+  "namespace": "telemetry",
+  "reliable_ack": false,
+  "rate_limit": {
+    "enabled": false,
+    "message_limit": 100
+  },
+  "records": {
+    "alerts": [
+      "logger"
+    ],
+    "errors": [
+      "logger"
+    ],
+    "V": [
+      "logger"
+    ]
+  },
+  "tls": {
+    "server_cert": "/telemetry/0000_cert.pem",
+    "server_key": "/telemetry/private-key.pem"
+  },
+  "ca": "-----BEGIN CERTIFICATE REQUEST-----\nMIHeMIGGAgEAMCQxIjAgBgNVBAMMGWJvc3Rvbi5lbGF1bmNoaW5mb3RlY2guaW4w\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATBec8XUKK+Fq8+Bzdo7BCajJeA7kOo\nCv2wWT0HLrdBkeXqHYPvq/JwAqEPcUqSWTGRgCkR54ipN12g/hZG0tIcoAAwCgYI\nKoZIzj0EAwIDRwAwRAIgDL0Ow3gsHQNZHaRB9MXtSidbR60zNPwnnBMSpEv0S8UC\nIEB6Eq6kqhb35TKl1V4Du9lQWSQmSCnP7fqAYSbHVw1G\n-----END CERTIFICATE REQUEST-----"
+}
